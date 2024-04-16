@@ -96,7 +96,8 @@ fun SpannableTextPreview() {
     val spannableText1 = "acık rıza"
     val spannableText2 = "kişisel verilerimin"
 
-    val visibilityDescription ="Tarafıma avantajlı tekliflerin sunulabilmesi amacıyla kişisel verilerimin işlenmesine ve paylaşılmasına acık rıza veriyorum"
+    val visibilityDescription =
+        "Tarafıma avantajlı tekliflerin sunulabilmesi amacıyla kişisel verilerimin işlenmesine ve paylaşılmasına acık rıza veriyorum"
 
     Box(modifier = Modifier.background(Color.White)) {
         SpannableText(
@@ -140,7 +141,7 @@ fun SpannableTextWithUnderLinePreview() {
                     isHaveUnderLine = true,
                     annotation = "tag_url",
                     spannableTextStyle = MaterialTheme.typography.bodyMedium,
-                            onClick = {
+                    onClick = {
                         Log.e("SpannableTextData", "it=$it")
 
                     }

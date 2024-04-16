@@ -136,7 +136,7 @@ fun Sample3() {
             tag = "linkedin",
             annotation = "https://www.linkedin.com/in/enesbaskaya/",
 
-        ),
+            ),
         SpannableTextData(
             text = spannableText2,
             spannableTextStyle = MaterialTheme.typography.bodyMedium.copy(color = Color.Red),
@@ -145,7 +145,7 @@ fun Sample3() {
             annotation = "https://github.com/enesb08",
 
 
-        ),
+            ),
         SpannableTextData(
             text = spannableText3,
             spannableTextStyle = MaterialTheme.typography.bodyMedium.copy(color = Color.Blue),
@@ -153,11 +153,11 @@ fun Sample3() {
             annotation = "https://enesbaskaya08.medium.com/",
 
 
-        )
+            )
     )
 
-    list.forEach{
-       it.onClick = {
+    list.forEach {
+        it.onClick = {
             Log.e("openLink", "link=" + it.item)
             Log.e("openLink", "tag=" + it.tag)
 
@@ -172,7 +172,7 @@ fun Sample3() {
             defTextStyle = MaterialTheme.typography.bodySmall.copy(
                 textAlign = TextAlign.Left
             ),
-            data =list
+            data = list
         )
     }
 }
