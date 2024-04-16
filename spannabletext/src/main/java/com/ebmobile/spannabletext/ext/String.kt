@@ -3,7 +3,7 @@ package com.ebmobile.spannabletext.ext
 fun String.findWordIndices(
     targetWord: String,
 ): List<Pair<Int, Int>> {
-    val regex = Regex(targetWord)
+    val regex = Regex("\\b$targetWord\\b")
     val result = mutableListOf<Pair<Int, Int>>()
 
     regex.findAll(this).forEach { match ->
