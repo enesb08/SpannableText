@@ -46,6 +46,7 @@ class MainActivity : ComponentActivity() {
 fun Samples() {
 
     Column(modifier = Modifier.fillMaxSize()) {
+        Spacer(modifier = Modifier.size(40.dp))
         Sample1()
         Spacer(modifier = Modifier.size(10.dp))
         Sample2()
@@ -57,7 +58,7 @@ fun Samples() {
 
 @Composable
 fun Sample1() {
-    val spannableText1 = "aydınlatma metnini"
+    val spannableText1 = "aydınlatma metnini "
 
     val visibilityDescription =
         "Kişisel verilerin işlenmesine yönelik aydınlatma metnini kabul ediyorum"
@@ -142,7 +143,7 @@ fun Sample3() {
             spannableTextStyle = MaterialTheme.typography.bodyMedium.copy(color = Color.Red),
             isHaveUnderLine = true,
             tag = "github",
-            annotation = "https://github.com/enesb08/",
+            annotation = "https://github.com/enesb08",
 
 
             ),
