@@ -6,14 +6,36 @@ SpannableText , Android uygulamaları için özel stil ve font ile tıklanabilir
 ## Nasıl Kullanılır
 
 1. **Projeye Ekleme:**
-   Projenizin `build.gradle` dosyasına aşağıdaki bağımlılığı ekleyin:
+ - Projenizin `build.gradle` dosyasına aşağıdaki bağımlılığı ekleyin:
 
-   ```gradle
+ ```gradle
    dependencies {
-	        implementation 'com.github.enesb08:SpannableText:Tag'
-	}
-
-2. **Kullanım Örnekleri:**
+	 implementation 'com.github.enesb08:SpannableText:Tag'
+   ```
+  - Projenizin `settings.gradle` dosyasına aşağıdaki bağımlılığı ekleyin:
+  
+  
+   Eklencek kod:
+ ```gradle
+ maven {
+         url = uri("https://jitpack.io")
+     }
+  ```
+  Eklenecek kısım:
+ ```gradle
+  dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://jitpack.io")
+        }
+    }
+}
+  
+  ```
+1. **Kullanım Örnekleri:**
  -  Sample:1
 ```kotlin
 @Composable
