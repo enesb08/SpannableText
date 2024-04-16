@@ -63,8 +63,8 @@ afterEvaluate {
         publications {
             register<MavenPublication>("release") {
                 groupId = "com.github.enesb08"
-                artifactId = "spannabletext"
-                version = "1.0.0"
+                artifactId = "SpannableText"
+                version = "v1.0.1"
 
                 from(components["release"])
             }
