@@ -35,7 +35,7 @@ SpannableText , Android uygulamaları için özel stil ve font ile tıklanabilir
 }
   
   ```
-1. **Kullanım Örnekleri:**
+2. **Kullanım Örnekleri:**
  -  Sample:1
 ```kotlin
 @Composable
